@@ -1,0 +1,172 @@
+<script>
+var comNumList = [];
+for (var i = 1; i <= 90; i++) {
+    comNumList.push(i);
+}
+
+function getRandomnum(max)
+{
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+Array.prototype.remove = function() {
+    var what, a = arguments, L = a.length, ax;
+    while (L && this.length) {
+        what = a[--L];
+        while ((ax = this.indexOf(what)) !== -1) {
+            this.splice(ax, 1);
+        }
+    }
+    return this;
+};
+
+function nextClick()
+{
+    if (comNumList.length > 0)
+    {
+        num = comNumList[getRandomnum(comNumList.length)];
+        row = Math.floor(num / 10);
+        col = num % 10 - 1;
+        if (col == -1)
+        {
+            col = 9;
+            row = row -1;
+        }
+        var random = document.getElementById("random");
+        random.innerHTML = num;
+        random.style.fontSize = "100"
+        random.innerHTML = random.textContent;
+        var table = document.getElementById('dataTable');
+        var cells = table.rows.item(row).cells;
+        cells[col].style.color = "black";
+        cells[col].style.backgroundColor = "grey";
+        cells[col].style.fontWeight = "900";
+        cells[col].innerHTML = cells[col].textContent;
+        comNumList.remove(num);
+        if (comNumList.length == 0)
+        {
+            document.getElementById("next").value = "Reload";
+        }
+    }
+    else
+    {
+        location.reload();
+    }
+}
+</script>
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button1 {font-size: 20px; background-color: #e7e7e7; color: black;}
+</style>
+<p align='center'>
+<table width='100%'>
+<tr>
+<td align='center' height="100"><form><input id="next" type=button value="Next" class="button button1" onclick="nextClick()"></form></td>
+</tr>
+<tr>
+<td align='center' height="50"><form><p id="random"></p></form></td>
+</tr>
+</table>
+<table width='100%' border="1" id="dataTable">
+</tr>   <td align='center' height="50"><font color="grey">    1   </font></td>   
+    <td align='center' height="50"><font color="grey">    2   </font></td>   
+    <td align='center' height="50"><font color="grey">    3   </font></td>   
+    <td align='center' height="50"><font color="grey">    4   </font></td>   
+    <td align='center' height="50"><font color="grey">    5   </font></td>   
+    <td align='center' height="50"><font color="grey">    6   </font></td>   
+    <td align='center' height="50"><font color="grey">    7   </font></td>   
+    <td align='center' height="50"><font color="grey">    8   </font></td>   
+    <td align='center' height="50"><font color="grey">    9   </font></td>   
+    <td align='center' height="50"><font color="grey">    10  </font></td>   </tr>
+</tr>   <td align='center' height="50"><font color="grey">    11  </font></td>   
+    <td align='center' height="50"><font color="grey">    12  </font></td>   
+    <td align='center' height="50"><font color="grey">    13  </font></td>   
+    <td align='center' height="50"><font color="grey">    14  </font></td>   
+    <td align='center' height="50"><font color="grey">    15  </font></td>   
+    <td align='center' height="50"><font color="grey">    16  </font></td>   
+    <td align='center' height="50"><font color="grey">    17  </font></td>   
+    <td align='center' height="50"><font color="grey">    18  </font></td>   
+    <td align='center' height="50"><font color="grey">    19  </font></td>   
+    <td align='center' height="50"><font color="grey">    20  </font></td>   </tr>
+</tr>   <td align='center' height="50"><font color="grey">    21  </font></td>   
+    <td align='center' height="50"><font color="grey">    22  </font></td>   
+    <td align='center' height="50"><font color="grey">    23  </font></td>   
+    <td align='center' height="50"><font color="grey">    24  </font></td>   
+    <td align='center' height="50"><font color="grey">    25  </font></td>   
+    <td align='center' height="50"><font color="grey">    26  </font></td>   
+    <td align='center' height="50"><font color="grey">    27  </font></td>   
+    <td align='center' height="50"><font color="grey">    28  </font></td>   
+    <td align='center' height="50"><font color="grey">    29  </font></td>   
+    <td align='center' height="50"><font color="grey">    30  </font></td>   </tr>
+</tr>   <td align='center' height="50"><font color="grey">    31  </font></td>   
+    <td align='center' height="50"><font color="grey">    32  </font></td>   
+    <td align='center' height="50"><font color="grey">    33  </font></td>   
+    <td align='center' height="50"><font color="grey">    34  </font></td>   
+    <td align='center' height="50"><font color="grey">    35  </font></td>   
+    <td align='center' height="50"><font color="grey">    36  </font></td>   
+    <td align='center' height="50"><font color="grey">    37  </font></td>   
+    <td align='center' height="50"><font color="grey">    38  </font></td>   
+    <td align='center' height="50"><font color="grey">    39  </font></td>   
+    <td align='center' height="50"><font color="grey">    40  </font></td>   </tr>
+</tr>   <td align='center' height="50"><font color="grey">    41  </font></td>   
+    <td align='center' height="50"><font color="grey">    42  </font></td>   
+    <td align='center' height="50"><font color="grey">    43  </font></td>   
+    <td align='center' height="50"><font color="grey">    44  </font></td>   
+    <td align='center' height="50"><font color="grey">    45  </font></td>   
+    <td align='center' height="50"><font color="grey">    46  </font></td>   
+    <td align='center' height="50"><font color="grey">    47  </font></td>   
+    <td align='center' height="50"><font color="grey">    48  </font></td>   
+    <td align='center' height="50"><font color="grey">    49  </font></td>   
+    <td align='center' height="50"><font color="grey">    50  </font></td>   </tr>
+</tr>   <td align='center' height="50"><font color="grey">    51  </font></td>   
+    <td align='center' height="50"><font color="grey">    52  </font></td>   
+    <td align='center' height="50"><font color="grey">    53  </font></td>   
+    <td align='center' height="50"><font color="grey">    54  </font></td>   
+    <td align='center' height="50"><font color="grey">    55  </font></td>   
+    <td align='center' height="50"><font color="grey">    56  </font></td>   
+    <td align='center' height="50"><font color="grey">    57  </font></td>   
+    <td align='center' height="50"><font color="grey">    58  </font></td>   
+    <td align='center' height="50"><font color="grey">    59  </font></td>   
+    <td align='center' height="50"><font color="grey">    60  </font></td>   </tr>
+</tr>   <td align='center' height="50"><font color="grey">    61  </font></td>   
+    <td align='center' height="50"><font color="grey">    62  </font></td>   
+    <td align='center' height="50"><font color="grey">    63  </font></td>   
+    <td align='center' height="50"><font color="grey">    64  </font></td>   
+    <td align='center' height="50"><font color="grey">    65  </font></td>   
+    <td align='center' height="50"><font color="grey">    66  </font></td>   
+    <td align='center' height="50"><font color="grey">    67  </font></td>   
+    <td align='center' height="50"><font color="grey">    68  </font></td>   
+    <td align='center' height="50"><font color="grey">    69  </font></td>   
+    <td align='center' height="50"><font color="grey">    70  </font></td>   </tr>
+</tr>   <td align='center' height="50"><font color="grey">    71  </font></td>   
+    <td align='center' height="50"><font color="grey">    72  </font></td>   
+    <td align='center' height="50"><font color="grey">    73  </font></td>   
+    <td align='center' height="50"><font color="grey">    74  </font></td>   
+    <td align='center' height="50"><font color="grey">    75  </font></td>   
+    <td align='center' height="50"><font color="grey">    76  </font></td>   
+    <td align='center' height="50"><font color="grey">    77  </font></td>   
+    <td align='center' height="50"><font color="grey">    78  </font></td>   
+    <td align='center' height="50"><font color="grey">    79  </font></td>   
+    <td align='center' height="50"><font color="grey">    80  </font></td>   </tr>
+</tr>   <td align='center' height="50"><font color="grey">    81  </font></td>   
+    <td align='center' height="50"><font color="grey">    82  </font></td>   
+    <td align='center' height="50"><font color="grey">    83  </font></td>   
+    <td align='center' height="50"><font color="grey">    84  </font></td>   
+    <td align='center' height="50"><font color="grey">    85  </font></td>   
+    <td align='center' height="50"><font color="grey">    86  </font></td>   
+    <td align='center' height="50"><font color="grey">    87  </font></td>   
+    <td align='center' height="50"><font color="grey">    88  </font></td>   
+    <td align='center' height="50"><font color="grey">    89  </font></td>   
+    <td align='center' height="50"><font color="grey">    90  </font></td>   </tr>
+</table>
+</p>

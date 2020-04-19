@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="ticket-generator.css">
+</head>
+
+<body>
+    <div id="ButtonArea">
+        <input type="button" onclick="printDiv('TicketArea')" value="Print" class="button button1" />
+        <input type="button" onclick="generateClick()" value="Generate" class="button button1" />
+        <input type="button" onclick="tryAndComplete()" value="Complete" class="button button1" />
+    </div>
+    <div><p id="debug"></p></div>
+    <div id="TicketArea">
+        <div id="tableForm" class="master">
+            <div class="parent_div_1">
+                <div class="child_div_1">
+                    <table width='300' border="1" id="ticket1">
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_2">
+                    <table width='300' border="1" id="ticket7">
+                        <tr>
+                            <td align='center' height="28" width="15"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_1">
+                    <table width='300' border="1" id="ticket2">
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_2">
+                    <table width='300' border="1" id="ticket8">
+                        <tr>
+                            <td align='center' height="28" width="15"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_1">
+                    <table width='300' border="1" id="ticket3">
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_2">
+                    <table width='300' border="1" id="ticket9">
+                        <tr>
+                            <td align='center' height="28" width="15"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_1">
+                    <table width='300' border="1" id="ticket4">
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_2">
+                    <table width='300' border="1" id="ticket10">
+                        <tr>
+                            <td align='center' height="28" width="15"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_1">
+                    <table width='300' border="1" id="ticket5">
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_2">
+                    <table width='300' border="1" id="ticket11">
+                        <tr>
+                            <td align='center' height="28" width="15"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_1">
+                    <table width='300' border="1" id="ticket6">
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="child_div_2">
+                    <table width='300' border="1" id="ticket12">
+                        <tr>
+                            <td align='center' height="28" width="15"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                        <tr>
+                            <td align='center' height="28" width="14"><font color="black">    1   </font></td>
+                            <td align='center'><font color="black">    10   </font></td>
+                            <td align='center'><font color="black">    20   </font></td>
+                            <td align='center'><font color="black">    30   </font></td>
+                            <td align='center'><font color="black">    40   </font></td>
+                            <td align='center'><font color="black">    50   </font></td>
+                            <td align='center'><font color="black">    60   </font></td>
+                            <td align='center'><font color="black">    70   </font></td>
+                            <td align='center'><font color="black">    80   </font></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="vline" class="vl" />
+        <div id="hline1" class="hl1" />
+        <div id="hline2" class="hl2" />
+        <div id="hline3" class="hl3" />
+        <div id="hline4" class="hl4" />
+        <div id="hline5" class="hl5" />
+        <div id="hline6" class="hl6" />
+        <div id="hline7" class="hl7" />
+    </div>
+</body>
+
+    <script type='text/javascript' src='./ticket-generator.js'></script>
+</html>

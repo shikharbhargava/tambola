@@ -1,0 +1,150 @@
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button1 {
+    font-size: 20px;
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.parent_div_1 {
+    width: 700px;
+    height: 1000px;
+    float: center;
+}
+
+.child_div_1 {
+    border: 1px solid black;
+    float: left;
+    margin-left: 15px;
+    margin-right: 20px;
+    margin-top: 35px;
+    /*margin-bottom: 10px;*/
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.child_div_2 {
+    border: 1px solid black;
+    float: left;
+    margin-left: 15px;
+    margin-top: 35px;
+    /*margin-bottom: 10px;*/
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.parent_div_1:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.vl:after {
+    content: "";
+    position: absolute;
+    border-left-width: 1px;
+    border-right-width: 0px;
+    border-style: dashed;
+    height: 953px;
+    top: 020px;
+    left: 357px;
+    /*display: none;*/
+}
+
+.hl1:after {
+    content: "";
+    position: absolute;
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-style: dashed;
+    width: 662px;
+    top: 183px;
+    left: 25px;
+    /*display: none;*/
+}
+
+.hl2:after {
+    content: "";
+    position: absolute;
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-style: dashed;
+    width: 662px;
+    top: 342px;
+    left: 25px;
+    /*display: none;*/
+}
+
+.hl3:after {
+    content: "";
+    position: absolute;
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-style: dashed;
+    width: 662px;
+    top: 501px;
+    left: 25px;
+    /*display: none;*/
+}
+
+.hl4:after {
+    content: "";
+    position: absolute;
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-style: dashed;
+    width: 662px;
+    top: 660px;
+    left: 25px;
+    /*display: none;*/
+}
+
+.hl5:after {
+    content: "";
+    position: absolute;
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-style: dashed;
+    width: 662px;
+    top: 819px;
+    left: 25px;
+    /*display: none;*/
+}
+
+.hl6:after {
+    content: "";
+    position: absolute;
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-style: dashed;
+    width: 662px;
+    top: 20px;
+    left: 25px;
+    /*display: none;*/
+}
+
+.hl7:after {
+    content: "";
+    position: absolute;
+    border-bottom-width: 1px;
+    border-top-width: 0px;
+    border-style: dashed;
+    width: 662px;
+    top: 980px;
+    left: 25px;
+    /*display: none;*/
+}
